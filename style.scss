@@ -1,0 +1,35 @@
+$main: #f73e3e;
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+
+html,
+body,
+div {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  background-color: #2b2b2b;
+}
+
+.container {
+  text-align: center;
+  background-color: $main;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+
+  // Add stuff on hover that does that cool underline transitiont thing - yes
+  // h1 {
+  // }
+
+  input {
+    padding: 5px;
+    border: none;
+  }
+}
