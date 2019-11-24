@@ -11,25 +11,58 @@ div {
 
 body {
   font-family: "Playfair Display", serif;
-  color: #fff;
-  background-color: #2b2b2b;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-.container {
-  text-align: center;
-  background-color: $main;
+button {
+  color: #fff;
+  background-color: #2b2b2b;
+  border: none;
+  padding: 10px;
+}
+
+.page-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px;
+}
+
+#container {
+  @extend .page-center;
+  text-align: center;
+  background-color: $main;
+  padding: 20px;
 
   // Add stuff on hover that does that cool underline transitiont thing - yes
   // h1 {
   // }
 
   input {
-    padding: 5px;
+    padding: 10px;
+    margin-right: 5px;
     border: none;
   }
+
+  #input-btn {
+    margin: 10px auto;
+  }
+
+  #random-btn {
+    display: flex;
+    margin: 0px auto;
+  }
+}
+
+#dot {
+  @extend .page-center;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: -1;
+  transition: height 2s, width 2s;
 }

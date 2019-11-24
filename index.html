@@ -8,10 +8,20 @@
     <title>Apex Color</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Enter a new color below!</h1>
-      <input type="text" />
-      <button>Change!</button>
+    <div id="container">
+      <h1>Enter a new hexcolor below!</h1>
+      <input
+        type="text"
+        placeholder="Enter a hexadecimal..."
+        onkeyup="inputShort(event)"
+      />
+      <button id="input-btn" onclick="input()">Change!</button>
+      <button id="random-btn" onclick="randomColor()">
+        Choose a Random Color
+      </button>
     </div>
+    <span id="dot"></span>
+
+    <script src="index.js"></script>
   </body>
 </html>
