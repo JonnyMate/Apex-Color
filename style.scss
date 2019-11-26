@@ -35,7 +35,9 @@ button {
   @extend .page-center;
   text-align: center;
   background-color: $main;
-  padding: 20px;
+  padding: 1rem;
+  box-shadow: 0px 0px 20px 5px #474747;
+  // Change input to line that highlights on focus
 
   // Add stuff on hover that does that cool underline transitiont thing - yes
   // h1 {
